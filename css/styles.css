@@ -28,9 +28,7 @@
   margin: 0 auto;
 }
 
-.section-a,
-.section-b,
-.section-d {
+.section {
   padding: 120px 0;
 }
 
@@ -223,6 +221,8 @@ header .container {
 
 .hero {
   background-color: var(--dark);
+  background-image: url(../images/people-office.jpg);
+  background-repeat: no-repeat;
   color: var(--white);
   padding-bottom: 188px;
   padding-top: 188px;
@@ -339,6 +339,7 @@ header .container {
 
 .logo-bottom {
   display: inline-block;
+  margin-right: 0;
   margin-bottom: 16px;
 }
 
@@ -399,8 +400,6 @@ header .container {
 
 .images_section_portfolio {
   padding: 96px 0 120px 0;
-  width: 1158px;
-  margin: 0 auto;
 }
 
 .images_section_portfolio p {
