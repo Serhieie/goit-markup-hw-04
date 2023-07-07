@@ -21,6 +21,31 @@
   flex-direction: column;
 }
 
+.underline {
+  width: auto;
+  height: 4px;
+  background-color: var(--pressed-state);
+  border-radius: 2px;
+  opacity: 0;
+}
+
+.overlay {
+  color: var(--cloud, #f4f4fd);
+  background-color: var(--primary-brand);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 500ms ease;
+  padding: 40px 32px;
+}
+
+a .underline:focus,
+a .underline:hover {
+  opacity: 1;
+}
 /* загальні вимоги до тегів */
 .container {
   width: 1158px;
@@ -64,6 +89,10 @@ ul {
 
 .list {
   padding-left: 0;
+}
+
+.icon {
+  fill: none;
 }
 
 body {
@@ -126,6 +155,7 @@ main {
   background: var(--white);
   width: 100%;
   position: fixed;
+  z-index: 999;
 }
 
 header .container {
@@ -172,6 +202,8 @@ header .container {
   line-height: 1.5;
   letter-spacing: 0.32px;
   padding: 24px 0;
+  transition-property: color;
+  transition-duration: 1000ms;
 }
 
 .nav-link:hover,
@@ -202,6 +234,8 @@ header .container {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  transition-property: color;
+  transition-duration: 1000ms;
 }
 
 .header-navigation-address .connect:hover,
@@ -260,6 +294,8 @@ header .container {
   min-width: 169px;
   margin-top: 48px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 1000ms;
 }
 
 .main_button:focus,
@@ -318,6 +354,7 @@ header .container {
 .twitter-team,
 .facebook-team,
 .linkedin-team {
+  margin: 12px 12px;
   width: 16px;
   height: 16px;
   display: flex;
@@ -327,13 +364,14 @@ header .container {
 
 .social-media-list-items-team {
   background-color: var(--primary-brand);
-  padding: 12px 12px;
   border-radius: 50%;
+  transition: background-color, 1000ms;
 }
 
 .social-media-list-items-team:hover,
 .social-media-list-items-team:focus {
-  background-color: var(--success);
+  background-color: var(--pressed-state);
+  cursor: pointer;
 }
 
 .social-media-list-team {
@@ -384,7 +422,8 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--subtle-text);
+  transition-property: fill;
+  transition-duration: 1500ms;
 }
 
 .customer-one:hover,
@@ -476,6 +515,7 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 8px 8px;
 }
 
 .social-media-list-items {
@@ -484,8 +524,7 @@ header .container {
   align-items: center;
   background-color: var(--primary-brand);
   border-radius: 50%;
-  padding: 8px 8px;
-  transition-property: background-color padding;
+  transition-property: background-color;
   transition-duration: 1000ms;
 }
 
@@ -514,6 +553,8 @@ header .container {
   border: 1px solid var(--accent);
   height: 48px;
   padding: 12px 24px;
+  transition-property: background-color, box-shadow, color;
+  transition-duration: 1000ms;
 }
 
 .nav-buttons:hover,
@@ -536,9 +577,14 @@ header .container {
 }
 
 .images-block-big-list {
+  position: relative;
   max-width: 360px;
   background: var(--white);
   flex-basis: calc((100% - 48px) / 3);
+}
+
+.images-block-big-list .overlay:hover {
+  opacity: 1;
 }
 
 .images-block-big a {
