@@ -221,7 +221,12 @@ header .container {
 
 .hero {
   background-color: var(--dark);
-  background-image: url(../images/people-office.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   color: var(--white);
   padding-bottom: 188px;
@@ -323,6 +328,10 @@ header .container {
   padding-bottom: 100px;
 }
 
+.footer-class .footer-div {
+  display: flex;
+}
+
 .footer-p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -341,6 +350,34 @@ header .container {
   display: inline-block;
   margin-right: 0;
   margin-bottom: 16px;
+}
+
+/* social links footer */
+.social-media {
+  margin-left: 120px;
+}
+
+.social-media p {
+  padding-bottom: 16px;
+}
+
+.social-media-list {
+  gap: 16px;
+}
+
+.social-media .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-brand);
+}
+
+.social-media .link:hover,
+.social-media .link:focus {
+  background-color: #31d0aa;
 }
 
 /* кнопки з portfolio.html */
