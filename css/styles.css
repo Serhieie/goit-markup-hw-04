@@ -33,6 +33,7 @@
 }
 
 .section-c {
+  padding-top: 0;
   padding-bottom: 120px;
 }
 
@@ -123,6 +124,8 @@ main {
   font-family: "Roboto", sans-serif;
   border-bottom: 1px solid var(--accent);
   background: var(--white);
+  width: 100%;
+  position: fixed;
 }
 
 header .container {
@@ -265,6 +268,25 @@ header .container {
 }
 
 /* cекція 2 опис та 3 картинки*/
+
+.icon-description-one,
+.icon-description-two,
+.icon-description-three,
+.icon-description-four {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-b-icons-item {
+  background-color: var(--light);
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
 .discription-list-img,
 .discription-list {
   display: flex;
@@ -291,6 +313,33 @@ header .container {
 }
 
 /* секція команди */
+
+.instagram-team,
+.twitter-team,
+.facebook-team,
+.linkedin-team {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-list-items-team {
+  background-color: var(--primary-brand);
+  padding: 12px 12px;
+  border-radius: 50%;
+}
+
+.social-media-list-items-team:hover,
+.social-media-list-items-team:focus {
+  background-color: var(--success);
+}
+
+.social-media-list-team {
+  margin: 0 auto;
+}
+
 .team_section {
   background-color: var(--light);
 }
@@ -316,8 +365,51 @@ header .container {
   max-width: 264px;
 }
 
+.team-cards-items p {
+  padding-bottom: 8px;
+}
+
 .team-cards-text {
   padding: 32px 16px;
+}
+
+.customer-one,
+.customer-two,
+.customer-three,
+.customer-four,
+.customer-five,
+.customer-six {
+  width: 102px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--subtle-text);
+}
+
+.customer-one:hover,
+.customer-two:hover,
+.customer-three:hover,
+.customer-four:hover,
+.customer-five:hover,
+.customer-six:hover {
+  fill: var(--pressed-state);
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.customers-list-items {
+  border: 1px solid var(--subtle-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - 144px) / 6);
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 
 /* футер */
@@ -359,25 +451,42 @@ header .container {
 
 .social-media p {
   padding-bottom: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 .social-media-list {
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
-.social-media .link {
+.facebook,
+.instagram,
+.twitter,
+.linkedin {
+  width: 24px;
+  height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--primary-brand);
 }
 
-.social-media .link:hover,
-.social-media .link:focus {
-  background-color: #31d0aa;
+.social-media-list-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-brand);
+  border-radius: 50%;
+  padding: 8px 8px;
+  transition-property: background-color padding;
+  transition-duration: 1000ms;
+}
+
+.social-media-list-items:focus,
+.social-media-list-items:hover {
+  background-color: var(--success);
 }
 
 /* кнопки з portfolio.html */

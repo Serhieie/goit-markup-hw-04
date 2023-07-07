@@ -3,74 +3,74 @@
   background-repeat: no-repeat;
   background-image: url(sprite.svg);
 }
-.icon-Client-4 {
-  width: 61px;
+.icon-customer-five {
+  width: 59px;
   height: 32px;
   background-position: 0 0;
 }
-.icon-antenna_1 {
-  width: 32px;
+.icon-customer-four {
+  width: 61px;
   height: 32px;
   background-position: -96px 0;
 }
-.icon-astronaut_1 {
-  width: 32px;
-  height: 32px;
-  background-position: -144px 0;
-}
-.icon-clock_1 {
-  width: 32px;
+.icon-customer-one {
+  width: 59px;
   height: 32px;
   background-position: -192px 0;
 }
-.icon-diagram_1 {
-  width: 32px;
-  height: 32px;
-  background-position: -240px 0;
-}
-.icon-facebook_1 {
-  width: 32px;
+.icon-customer-six {
+  width: 59px;
   height: 32px;
   background-position: -288px 0;
 }
-.icon-instagram_2 {
-  width: 32px;
-  height: 32px;
-  background-position: -336px 0;
-}
-.icon-linkedin_1 {
-  width: 32px;
+.icon-customer-three {
+  width: 59px;
   height: 32px;
   background-position: -384px 0;
 }
-.icon-Logo {
+.icon-customer-two {
   width: 59px;
   height: 32px;
-  background-position: -432px 0;
+  background-position: -480px 0;
 }
-.icon-Logo1 {
-  width: 59px;
+.icon-description-one {
+  width: 32px;
   height: 32px;
-  background-position: -528px 0;
+  background-position: -576px 0;
 }
-.icon-Logo2 {
-  width: 59px;
+.icon-description-three {
+  width: 32px;
   height: 32px;
   background-position: -624px 0;
 }
-.icon-Logo3 {
-  width: 59px;
+.icon-description-two {
+  width: 32px;
+  height: 32px;
+  background-position: -672px 0;
+}
+.icon-discription-four {
+  width: 32px;
+  height: 32px;
+  background-position: -720px 0;
+}
+.icon-facebook {
+  width: 32px;
   height: 32px;
   background-position: 0 -48px;
 }
-.icon-Logo4 {
-  width: 59px;
+.icon-instagram {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -48px;
+}
+.icon-linkedin {
+  width: 32px;
   height: 32px;
   background-position: -96px -48px;
 }
-.icon-twitter_1 {
+.icon-twitter {
   width: 32px;
   height: 32px;
-  background-position: -192px -48px;
+  background-position: -144px -48px;
 }
 
