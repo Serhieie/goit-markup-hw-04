@@ -21,14 +21,6 @@
   flex-direction: column;
 }
 
-.underline {
-  width: auto;
-  height: 4px;
-  background-color: var(--pressed-state);
-  border-radius: 2px;
-  opacity: 0;
-}
-
 .overlay {
   color: var(--cloud, #f4f4fd);
   background-color: var(--primary-brand);
@@ -423,7 +415,8 @@ header .container {
   justify-content: center;
   align-items: center;
   transition-property: fill;
-  transition-duration: 1500ms;
+  transition-duration: 750ms;
+  fill: var(--subtle-text);
 }
 
 .customer-one:hover,
@@ -442,18 +435,29 @@ header .container {
 }
 
 .customers-list-items {
-  border: 1px solid var(--subtle-text);
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-basis: calc((100% - 144px) / 6);
   padding: 16px 32px;
-  border-radius: 4px;
   fill: var(--subtle-text);
 }
 
-.customers-list-items a svg use:hover {
-  fill: var(--pressed-state);
+.customers-list-items::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+  pointer-events: none;
+  transition: border-color 1000 ease;
+}
+
+.customers-list-items:hover::after {
+  border-width: 2px;
+  border-color: var(--pressed-state);
 }
 
 /* футер */
