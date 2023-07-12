@@ -399,29 +399,25 @@ header .container {
   padding: 32px 16px;
 }
 
-.customer-one,
-.customer-two,
-.customer-three,
-.customer-four,
-.customer-five,
-.customer-six {
-  width: 102px;
-  height: 56px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.customer-links .icon {
   transition-property: fill;
   transition-duration: 750ms;
   fill: var(--subtle-text);
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
+  justify-content: center;
 }
 
-.customer-one:hover,
-.customer-two:hover,
-.customer-three:hover,
-.customer-four:hover,
-.customer-five:hover,
-.customer-six:hover {
+.customers-list-items .customer-four {
+  padding: 8px 16px;
+}
+
+.customer-links svg:hover {
   fill: var(--pressed-state);
+  border-color: var(--pressed-state);
 }
 
 .customers-list {
@@ -433,27 +429,7 @@ header .container {
 .customers-list-items {
   position: relative;
   display: flex;
-  flex-basis: calc((100% - 144px) / 6);
-  padding: 16px 32px;
-  fill: var(--subtle-text);
-}
-
-.customers-list-items::after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 1px solid var(--subtle-text);
-  border-radius: 4px;
-  pointer-events: none;
-  transition: border-color 1000 ease;
-}
-
-.customers-list-items:hover::after {
-  border-width: 2px;
-  border-color: var(--pressed-state);
+  width: calc((100% - 144px) / 6);
 }
 
 /* футер */
@@ -608,6 +584,8 @@ header .container {
 .images-block-big-list:hover,
 .images-block-big-list:focus {
   transform: scale(1.05);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .images-block-big a {
