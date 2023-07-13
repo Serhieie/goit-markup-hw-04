@@ -687,6 +687,7 @@ header .container {
   transition: background-color, background-image 250ms ease-in-out;
 }
 
+.modal-btn:focus::before,
 .modal-btn:hover::before {
   margin: auto;
   content: "";
@@ -696,6 +697,7 @@ header .container {
   background-size: contain;
 }
 
+.modal-btn:focus,
 .modal-btn:hover {
   background-color: var(--pressed-state);
   border: none;
