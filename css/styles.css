@@ -663,10 +663,11 @@ header .container {
   display: inline-flex;
   width: 30px;
   height: 30px;
-  background-color: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  background-color: var(--accent);
+  transition: background-color, background-image 250ms ease-in-out;
 }
 
 .modal-btn::before {
@@ -676,4 +677,19 @@ header .container {
   height: 11px;
   background-image: url(../icons/SVG/cross-close.svg);
   background-size: contain;
+  transition: background-color, background-image 250ms ease-in-out;
+}
+
+.modal-btn:hover::before {
+  margin: auto;
+  content: "";
+  width: 11px;
+  height: 11px;
+  background-image: url(../icons/SVG/white-cross-close.svg);
+  background-size: contain;
+}
+
+.modal-btn:hover {
+  background-color: var(--pressed-state);
+  border: none;
 }
