@@ -27,7 +27,7 @@ a .underline:hover {
 }
 /* загальні вимоги до тегів */
 .container {
-  width: 1200px;
+  width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -320,9 +320,10 @@ header .container {
 
 .discription-list-img,
 .discription-list {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 24px;
 }
 
 .discription-list-items {
@@ -330,7 +331,7 @@ header .container {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.discription-list-img-list {
+.discription-list-img-items {
   flex-basis: calc((100% - 48px) / 3);
 }
 
