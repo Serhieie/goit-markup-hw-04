@@ -305,27 +305,40 @@ header .container {
 
 /* cекція 2 опис та 3 картинки*/
 
-.icon-description {
-  width: 64px;
-  height: 64px;
-  display: flex;
-}
-
-.icon-description-div {
-  background-color: var(--light);
-
-  border-radius: 4px;
-
-  padding: 24px 100px;
-  margin-bottom: 8px;
-}
-
 .discription-list-img,
 .discription-list {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+}
+
+.discription-list-items::before {
+  content: "";
+  display: block;
+  height: 112px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px 64px;
+  background-color: var(--light);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.anthena-icon::before {
+  background-image: url(../SVG/description-one.svg);
+}
+
+.clock-icon::before {
+  background-image: url(../SVG/description-two.svg);
+}
+
+.computer-icon::before {
+  background-image: url(../SVG/description-three.svg);
+}
+
+.cosmo-icon::before {
+  background-image: url(../SVG/discription-four.svg);
 }
 
 .discription-list-items {
@@ -682,7 +695,7 @@ header .container {
   content: "";
   width: 11px;
   height: 11px;
-  background-image: url(../icons/SVG/cross-close.svg);
+  background-image: url(../SVG/cross-close.svg);
   background-size: contain;
   transition: background-color, background-image 250ms ease-in-out;
 }
@@ -693,7 +706,7 @@ header .container {
   content: "";
   width: 11px;
   height: 11px;
-  background-image: url(../icons/SVG/white-cross-close.svg);
+  background-image: url(../SVG/white-cross-close.svg);
   background-size: contain;
 }
 
@@ -701,4 +714,8 @@ header .container {
 .modal-btn:hover {
   background-color: var(--pressed-state);
   border: none;
+}
+
+.footer-social {
+  fill: var(--modal-background);
 }
