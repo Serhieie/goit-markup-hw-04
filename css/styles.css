@@ -307,38 +307,22 @@ header .container {
 
 .discription-list-img,
 .discription-list {
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
 
-.discription-list-items::before {
-  content: "";
-  display: block;
-  height: 112px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 64px 64px;
+.description-icons-div {
   background-color: var(--light);
+  height: 112px;
+  display: flex;
+  align-items: center;
   border-radius: 4px;
   margin-bottom: 8px;
 }
 
-.anthena-icon::before {
-  background-image: url(../SVG/description-one.svg);
-}
-
-.clock-icon::before {
-  background-image: url(../SVG/description-two.svg);
-}
-
-.computer-icon::before {
-  background-image: url(../SVG/description-three.svg);
-}
-
-.cosmo-icon::before {
-  background-image: url(../SVG/discription-four.svg);
+.description-icons {
+  height: 64px;
 }
 
 .discription-list-items {
@@ -529,6 +513,10 @@ header .container {
   background-color: var(--success);
 }
 
+.footer-social {
+  fill: var(--modal-background);
+}
+
 /* кнопки з portfolio.html */
 .nav-buttons-list {
   display: flex;
@@ -680,9 +668,11 @@ header .container {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: inline-flex;
-  width: 30px;
-  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -690,17 +680,13 @@ header .container {
   transition: background-color, background-image 250ms ease-in-out;
 }
 
-.modal-btn::before {
-  margin: auto;
-  content: "";
-  width: 11px;
-  height: 11px;
-  background-image: url(../SVG/cross-close.svg);
-  background-size: contain;
+.modal-button-icon {
+  min-height: 24px;
+  min-width: 24px;
   transition: background-color, background-image 250ms ease-in-out;
 }
 
-.modal-btn:focus::before,
+/* .modal-btn:focus::before,
 .modal-btn:hover::before {
   margin: auto;
   content: "";
@@ -708,14 +694,11 @@ header .container {
   height: 11px;
   background-image: url(../SVG/white-cross-close.svg);
   background-size: contain;
-}
+} */
 
 .modal-btn:focus,
 .modal-btn:hover {
   background-color: var(--pressed-state);
   border: none;
-}
-
-.footer-social {
   fill: var(--modal-background);
 }

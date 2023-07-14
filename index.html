@@ -67,12 +67,11 @@
             <h2 class="visually-hidden">Description</h2>
             <ul class="list discription-list">
               <li class="discription-list-items anthena-icon">
-                                  <svg class="icon footer-icon">
-                    <use
-                      class="footer-social"
-                      xlink:href="./images/symbol-defs.svg#icon-description-one"
-                    ></use>
+                <div class="description-icons-div">
+                  <svg class="description-icons">
+                    <use xlink:href="./images/symbol-defs.svg#icon-description-one"></use>
                   </svg>
+                </div>
                 <h3 class="desc-three">Strategy</h3>
                 <p class="desc-p">
                   Our goal is to identify the business problem to walk away with the
@@ -80,12 +79,11 @@
                 </p>
               </li>
               <li class="discription-list-items clock-icon">
-                                  <svg class="icon footer-icon">
-                    <use
-                      class="footer-social"
-                      xlink:href="./images/symbol-defs.svg#icon-description-two"
-                    ></use>
+                <div class="description-icons-div">
+                  <svg class="description-icons">
+                    <use xlink:href="./images/symbol-defs.svg#icon-description-two"></use>
                   </svg>
+                </div>
                 <h3 class="desc-three">Punctuality</h3>
                 <p class="desc-p">
                   Bring the key message to the brand's audience for the best price within
@@ -93,12 +91,13 @@
                 </p>
               </li>
               <li class="discription-list-items computer-icon">
-                                  <svg class="icon footer-icon">
+                <div class="description-icons-div">
+                  <svg class="description-icons">
                     <use
-                      class="footer-social"
                       xlink:href="./images/symbol-defs.svg#icon-description-three"
                     ></use>
                   </svg>
+                </div>
                 <h3 class="desc-three">Diligence</h3>
                 <p class="desc-p">
                   Research and confirm brands that present the strongest digital growth
@@ -106,12 +105,13 @@
                 </p>
               </li>
               <li class="discription-list-items cosmo-icon">
-                                  <svg class="icon footer-icon">
+                <div class="description-icons-div">
+                  <svg class="description-icons">
                     <use
-                      class="footer-social"
                       xlink:href="./images/symbol-defs.svg#icon-discription-four"
                     ></use>
                   </svg>
+                </div>
                 <h3 class="desc-three">Technologies</h3>
                 <p class="desc-p">
                   Design practice focused on digital experiences. We bring forth a deep
@@ -494,7 +494,11 @@
       </footer>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="modal-btn" type="button" data-modal-close></button>
+          <button class="modal-btn" type="button" data-modal-close>
+            <svg class="modal-button-icon" width="8" height="8">
+              <use xlink:href="./images/symbol-defs.svg#cross"></use>
+            </svg>
+          </button>
         </div>
       </div>
       <script src="./js/modal.js"></script>
