@@ -14,8 +14,6 @@
   --white: #fff;
 }
 
-/* Приліпленний футер */
-
 a .underline:focus,
 a .underline:hover {
   opacity: 1;
@@ -350,7 +348,7 @@ header .container {
 
 .team-social-link {
   width: 100%;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
   background-color: var(--primary-brand);
   border-radius: 50%;
@@ -477,6 +475,7 @@ header .container {
 }
 
 .social-media-paragraph {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -560,7 +559,7 @@ header .container {
   height: 48px;
   padding: 12px 24px;
 
-  transition: transition зі значенням color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: transition color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -572,34 +571,26 @@ header .container {
   background-color: var(--pressed-state);
   border: 1px solid transparent;
   cursor: pointer;
-  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08),
-    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* секція з картинками на partfolio.html */
-.overlay {
-  color: var(--cloud, #f4f4fd);
-  background-color: var(--primary-brand);
+.images-block-big-list .overlay {
   position: relative;
   overflow: hidden;
-  top: 0;
-  left: 0;
   width: 360px;
   height: 300px;
-  opacity: 0;
-  transform: translate(-100%);
-  transition: transform 250ms ease-in-out;
-  padding: 75px 32px;
 }
 
-.overlay-p {
+.images-block-big-list .overlay-p {
   position: absolute;
   top: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--light);
   padding: 40px 32px;
+  color: var(--light);
   background-color: var(--primary-brand);
   height: 100%;
   width: 100%;
@@ -618,12 +609,12 @@ header .container {
 .images-block-big-list {
   background: var(--white);
   width: calc((100% - 48px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .images-block-big-link {
-  text-decoration: none;
   display: block;
+  text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .images-block-big-link:hover .overlay-p,
@@ -631,8 +622,8 @@ header .container {
   transform: translateY(0%);
 }
 
-.images-block-big-link:hover,
-.images-block-big-link:focus {
+.images-block-big-link:focus,
+.images-block-big-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -647,10 +638,6 @@ header .container {
   padding: 96px 0 120px 0;
 }
 
-.images_section_portfolio p {
-  margin-top: 8px;
-}
-
 /* Модальне вікно */
 
 .backdrop {
@@ -661,12 +648,12 @@ header .container {
   width: 100%;
   height: 100%;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
   transform: scale(1);
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -683,10 +670,10 @@ header .container {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
 
   min-width: 408px;
-  min-height: 581px;
+  min-height: 584px;
 
   background: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -698,8 +685,8 @@ header .container {
 
 .modal-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 24px;
+  right: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
