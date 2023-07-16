@@ -614,7 +614,9 @@ header .container {
 .images-block-big-link {
   display: block;
   text-decoration: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
 }
 
 .images-block-big-link:hover .overlay-p,
@@ -626,6 +628,7 @@ header .container {
 .images-block-big-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: scale(1.05);
 }
 
 .images-block-big-text {
@@ -660,6 +663,10 @@ header .container {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal {
